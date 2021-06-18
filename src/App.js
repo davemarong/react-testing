@@ -1,9 +1,22 @@
-import React from "react";
-import Home from "./Home";
+import React, { useState } from "react";
+import CounterComponent from "./CounterComponent";
 function App() {
+  const [counter, setCounter] = useState(0);
+
+  const increaseCounter = () => {
+    setCounter(counter + 1);
+  };
+  const decreaseCounter = () => {
+    setCounter(counter - 1);
+  };
   return (
     <>
-      <Home />
+      <CounterComponent
+        count={counter}
+        setCount={setCounter}
+        increaseCount={increaseCounter}
+        decreaseCount={decreaseCounter}
+      />
     </>
   );
 }

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import CounterComponent from "./CounterComponent";
+import JSX from "./JSX";
+import TestFile from "./TestFile";
 function App() {
   const [counter, setCounter] = useState(0);
 
@@ -11,12 +13,14 @@ function App() {
   };
   return (
     <>
-      <CounterComponent
+      {/* <CounterComponent
         count={counter}
         setCount={setCounter}
         increaseCount={increaseCounter}
         decreaseCount={decreaseCounter}
       />
+       <JSX /> */}
+      {/* <TestFile /> */}
     </>
   );
 }

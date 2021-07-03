@@ -18,9 +18,9 @@ function App() {
         setCount={setCounter}
         increaseCount={increaseCounter}
         decreaseCount={decreaseCounter}
-      />
-       <JSX /> */}
-      {/* <TestFile /> */}
+      /> */}
+      {/* <JSX /> */}
+      <TestFile tall={1} />
     </>
   );
 }

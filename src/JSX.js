@@ -1,6 +1,13 @@
 export default function JSX() {
   // video 1 - Hva er JSX?
-  const element = <h1>Hei verden!</h1>;
+  const navn = "Dave";
+  const element = <h1>Hei, {navn}!</h1>;
+
+  const age = 17;
+  const sentence = <p>My name is Dave, and I am {age} years old</p>;
+
+  const pTag = <p>Hei there,</p>;
+  const anotherSentence = <p>{pTag}, what are you doing?</p>;
   //   -----------------------------------------------------
 
   // video 2 - Javascript utrykk
